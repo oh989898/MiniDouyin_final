@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiniDouyin</string>
+    <string name="title_activity_custom_camera">CustomCameraActivity</string>
+    <string name="post_it">post it!</string>
+    <string name="select_an_image">select an image</string>
+    <string name="select_a_video">select a video</string>
+</resources>

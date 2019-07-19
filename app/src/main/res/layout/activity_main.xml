@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background = "@drawable/background"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main_body1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background2"></RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80.0dip"
+        android:background = "@drawable/background2"
+        android:layout_alignParentBottom="true"
+        >
+        <!--layout_weight这个属性为权重，让两个textview平分这个linearLayout-->
+
+        <Button
+            android:id="@+id/Layout_3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0"
+            android:background="@drawable/redbuton_selector"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="+"
+            android:textColor="#747474"
+            android:textSize="45dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Layout_0_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/redbuton_selector"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="上传"
+            android:textColor="#747474"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="@drawable/background2">
+        <!--layout_weight这个属性为权重，让两个textview平分这个linearLayout-->
+
+        <Button
+            android:id="@+id/Layout_0_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/redbuton_selector"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="刷新"
+            android:textColor="#747474"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

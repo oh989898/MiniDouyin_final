@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/background"
+    tools:context=".WhileMainActivity">
+
+    <Button
+        android:id="@+id/button_whilewhite"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/whitebutton_selector"
+        android:elevation="15dp"
+        android:onClick="myClick_whilewhite"
+        android:stateListAnimator="@null"
+        android:text="SEE OTHERS"
+        android:textColor="#747474"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/button_redwhile"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/redbuton_selector"
+        android:elevation="15dp"
+        android:onClick="myClick_redwhile"
+        android:stateListAnimator="@null"
+        android:text="UPDATE YOURS"
+        android:textColor="#747474"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/whileround"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/redbuton_selector"
+        android:elevation="15dp"
+        android:onClick="myClick_whileround"
+        android:stateListAnimator="@null"
+        android:text="🐾"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
